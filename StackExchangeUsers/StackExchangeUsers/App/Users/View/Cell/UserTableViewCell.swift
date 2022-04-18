@@ -12,7 +12,9 @@ class UserTableViewCell: UITableViewCell {
 
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var dateLabel: UILabel!
-  @IBOutlet weak var profileImageView: UIImageView!
+  @IBOutlet weak var profileImageView: KFImageView!
+  @IBOutlet weak var imageContainerView: UIView!
+  @IBOutlet weak var containerView: UIView!
 
   var cancellable = Set<AnyCancellable>()
   var viewModel: UserTableCellViewModel? {
@@ -23,7 +25,16 @@ class UserTableViewCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    // Initialization code
+
+    imageContainerView.makeItCapsuleOrCircle(isMask: false)
+//    imageContainerView.setShadow()
+
+    containerView.setCornerRadius(15, isMask: false)
+    containerView.setShadow()
+
+    profileImageView.makeItCapsuleOrCircle()
+    profileImageView.imageUri = "https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=256&d=identicon&r=PG"
+
   }
 
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -33,13 +44,12 @@ class UserTableViewCell: UITableViewCell {
   }
 
   private func setupBinding() {
-    
   }
 
-  override func prepareForReuse() {
-    super.prepareForReuse()
-    nameLabel.text = nil
-    dateLabel.text = nil
-    profileImageView.image = nil
-  }
+//  override func prepareForReuse() {
+//    super.prepareForReuse()
+//    nameLabel.text = nil
+//    dateLabel.text = nil
+//    profileImageView.image = nil
+//  }
 }

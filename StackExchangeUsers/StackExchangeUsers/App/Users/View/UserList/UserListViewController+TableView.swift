@@ -23,8 +23,8 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     tableView.showsHorizontalScrollIndicator = false
     tableView.separatorInset.left = 16
     tableView.separatorInset.right = 16
-    tableView.separatorStyle = .singleLine
-    tableView.allowsSelection = false
+    tableView.separatorStyle = .none
+    tableView.allowsSelection = true
     tableView.tableFooterView = UIView()
 
     let refreshControl = UIRefreshControl()
@@ -33,7 +33,7 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return users?.count ?? 0
+    return users?.count ?? 10
   }
 
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

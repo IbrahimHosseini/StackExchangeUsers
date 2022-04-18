@@ -12,6 +12,10 @@
 		033C8D13280D50CF004CECAD /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C8D11280D50CF004CECAD /* User.storyboard */; };
 		033C8D15280D50D2004CECAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 033C8D14280D50D2004CECAD /* Assets.xcassets */; };
 		033C8D18280D50D2004CECAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 033C8D16280D50D2004CECAD /* LaunchScreen.storyboard */; };
+		03573DDE280D752D0096A9C8 /* KFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DDD280D752D0096A9C8 /* KFImageView.swift */; };
+		03573DE1280D84020096A9C8 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE0280D84020096A9C8 /* UIView+Border.swift */; };
+		03573DE3280D84200096A9C8 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE2280D84200096A9C8 /* UIView+CornerRadius.swift */; };
+		03573DE5280D84460096A9C8 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE4280D84460096A9C8 /* UIView+Shadow.swift */; };
 		036C5865280D54B6002F1B3F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5864280D54B6002F1B3F /* UserListViewController.swift */; };
 		036C5867280D54D2002F1B3F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5866280D54D2002F1B3F /* UserDetailsViewController.swift */; };
 		036C586A280D54FC002F1B3F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5868280D54FC002F1B3F /* UserTableViewCell.swift */; };
@@ -39,6 +43,10 @@
 		033C8D14280D50D2004CECAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		033C8D17280D50D2004CECAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		033C8D19280D50D2004CECAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03573DDD280D752D0096A9C8 /* KFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFImageView.swift; sourceTree = "<group>"; };
+		03573DE0280D84020096A9C8 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
+		03573DE2280D84200096A9C8 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		03573DE4280D84460096A9C8 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		036C5864280D54B6002F1B3F /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		036C5866280D54D2002F1B3F /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		036C5868280D54FC002F1B3F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -93,9 +101,10 @@
 		033C8D0A280D50CF004CECAD /* StackExchangeUsers */ = {
 			isa = PBXGroup;
 			children = (
+				03573DDC280D74FD0096A9C8 /* Manager */,
+				036C585E280D5210002F1B3F /* App */,
 				036C587F280D64E4002F1B3F /* Extensions */,
 				036C587E280D64DD002F1B3F /* Network */,
-				036C585E280D5210002F1B3F /* App */,
 				033C8D1F280D518E004CECAD /* Resource */,
 			);
 			path = StackExchangeUsers;
@@ -111,6 +120,24 @@
 				033C8D19280D50D2004CECAD /* Info.plist */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		03573DDC280D74FD0096A9C8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				03573DDD280D752D0096A9C8 /* KFImageView.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		03573DDF280D83EB0096A9C8 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				03573DE0280D84020096A9C8 /* UIView+Border.swift */,
+				03573DE2280D84200096A9C8 /* UIView+CornerRadius.swift */,
+				03573DE4280D84460096A9C8 /* UIView+Shadow.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		036C585E280D5210002F1B3F /* App */ = {
@@ -199,6 +226,7 @@
 		036C587F280D64E4002F1B3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				03573DDF280D83EB0096A9C8 /* UIView */,
 				036C5885280D6662002F1B3F /* UIStroyboard */,
 				036C5884280D663F002F1B3F /* UITableView */,
 			);
@@ -237,7 +265,6 @@
 				DB233F4781E57272ED2D6211 /* Pods-StackExchangeUsers.debug.xcconfig */,
 				9F02E9E950FA9632B69521C4 /* Pods-StackExchangeUsers.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -364,14 +391,18 @@
 				036C5887280D6682002F1B3F /* UIStoryboard.swift in Sources */,
 				036C5877280D5FB1002F1B3F /* ExternalLinks.swift in Sources */,
 				033C8D0E280D50CF004CECAD /* SceneDelegate.swift in Sources */,
+				03573DE5280D84460096A9C8 /* UIView+Shadow.swift in Sources */,
 				036C5883280D6545002F1B3F /* UITableView+DequeueCell.swift in Sources */,
 				036C586E280D5515002F1B3F /* UserTableViewModel.swift in Sources */,
+				03573DE3280D84200096A9C8 /* UIView+CornerRadius.swift in Sources */,
 				036C5873280D5557002F1B3F /* User.swift in Sources */,
 				036C5867280D54D2002F1B3F /* UserDetailsViewController.swift in Sources */,
 				036C587B280D5FE0002F1B3F /* Collectives.swift in Sources */,
 				036C5889280D66DD002F1B3F /* UIStoryboard+Instantiation.swift in Sources */,
 				036C5865280D54B6002F1B3F /* UserListViewController.swift in Sources */,
+				03573DE1280D84020096A9C8 /* UIView+Border.swift in Sources */,
 				036C5875280D5F8B002F1B3F /* BadgeCount.swift in Sources */,
+				03573DDE280D752D0096A9C8 /* KFImageView.swift in Sources */,
 				036C5881280D6535002F1B3F /* UITableView+Register.swift in Sources */,
 				036C586A280D54FC002F1B3F /* UserTableViewCell.swift in Sources */,
 			);
@@ -526,7 +557,7 @@
 				INFOPLIST_FILE = StackExchangeUsers/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = User;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -555,7 +586,7 @@
 				INFOPLIST_FILE = StackExchangeUsers/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = User;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

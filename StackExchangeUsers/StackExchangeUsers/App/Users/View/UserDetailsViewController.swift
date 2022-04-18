@@ -13,7 +13,8 @@ class UserDetailsViewController: UIViewController {
   @IBOutlet weak var reputationLabel: UILabel!
   @IBOutlet weak var tagLabel: UILabel!
   @IBOutlet weak var linkLabel: UILabel!
-  @IBOutlet weak var profileImageView: UIImageView!
+  @IBOutlet weak var profileImageView: KFImageView!
+  @IBOutlet weak var imageContainerView: UIView!
 
 
   // MARK: - Properties
@@ -41,6 +42,12 @@ class UserDetailsViewController: UIViewController {
   fileprivate func setupView() {
     tagLabel.numberOfLines = 0
     linkLabel.numberOfLines = 0
+
+    profileImageView.imageUri = "https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=256&d=identicon&r=PG"
+    profileImageView.makeItCapsuleOrCircle()
+
+    imageContainerView.makeItCapsuleOrCircle(isMask: false)
+    imageContainerView.setShadow()
 
   }
 
