@@ -25,31 +25,38 @@ class UserTableViewCell: UITableViewCell {
 
   override func awakeFromNib() {
     super.awakeFromNib()
-
     imageContainerView.makeItCapsuleOrCircle(isMask: false)
-//    imageContainerView.setShadow()
 
     containerView.setCornerRadius(15, isMask: false)
     containerView.setShadow()
 
     profileImageView.makeItCapsuleOrCircle()
-    profileImageView.imageUri = "https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=256&d=identicon&r=PG"
-
   }
-
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-
-    // Configure the view for the selected state
-  }
-
   private func setupBinding() {
+    viewModel?.$name
+      .map{$0}
+      .assign(to: \.text, on: nameLabel)
+      .store(in: &cancellable)
+
+    viewModel?.$date
+      .receive(on: RunLoop.main)
+      .sink { [weak self] date in
+        guard let self = self else { return }
+
+        self.dateLabel.text = "Member of \(date)"
+      }
+      .store(in: &cancellable)
+
+    viewModel?.$profileImage
+      .map{$0}
+      .assign(to: \.imageUri, on: profileImageView)
+      .store(in: &cancellable)
   }
 
-//  override func prepareForReuse() {
-//    super.prepareForReuse()
-//    nameLabel.text = nil
-//    dateLabel.text = nil
-//    profileImageView.image = nil
-//  }
+  override func prepareForReuse() {
+    super.prepareForReuse()
+    nameLabel.text = nil
+    dateLabel.text = nil
+    profileImageView.image = nil
+  }
 }

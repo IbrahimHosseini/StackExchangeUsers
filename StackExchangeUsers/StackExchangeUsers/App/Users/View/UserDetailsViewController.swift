@@ -43,12 +43,20 @@ class UserDetailsViewController: UIViewController {
     tagLabel.numberOfLines = 0
     linkLabel.numberOfLines = 0
 
-    profileImageView.imageUri = "https://www.gravatar.com/avatar/6d8ebb117e8d83d74ea95fbdd0f87e13?s=256&d=identicon&r=PG"
+    linkLabel.isUserInteractionEnabled = true
+
+    let tap = UITapGestureRecognizer(target: self, action: #selector(openLink))
+    linkLabel.addGestureRecognizer(tap)
     profileImageView.makeItCapsuleOrCircle()
 
     imageContainerView.makeItCapsuleOrCircle(isMask: false)
     imageContainerView.setShadow()
+  }
 
+  @objc fileprivate func openLink() {
+    guard let user = user else { return }
+
+    openUrl(user.link, viewController: self)
   }
 
   fileprivate func refreshView() {
@@ -57,9 +65,17 @@ class UserDetailsViewController: UIViewController {
     }
 
     nameLabel.text = user.name
-    reputationLabel.text = user.reputation
-    tagLabel.text = user.tags.first
+    reputationLabel.text = "Reputation: " + user.reputation
+    var tags = ""
+    user.tags.forEach { tag in
+      guard !tag.isEmpty else { return }
+      tags += "#" + tag + ", "
+    }
+    tagLabel.text = tags
     linkLabel.text = user.link
+
+    profileImageView.imageUri = user.profileImage
+
   }
 
   // MARK: - Actions

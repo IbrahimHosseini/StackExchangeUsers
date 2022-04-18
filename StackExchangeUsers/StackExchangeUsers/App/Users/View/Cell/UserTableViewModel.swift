@@ -16,12 +16,39 @@ class UserTableCellViewModel {
   @Published var tags = [""]
   @Published var profileImage = ""
 
-  init() {
-
+  private var user: User?
+  init(_ users: User) {
+    self.user = users
     setupBinding()
   }
 
   private func setupBinding() {
+    guard let user = user else {
+      return
+    }
 
+    if let name = user.display_name {
+      self.name = name
+    }
+
+    if let date = user.creation_date {
+      self.date = date.timeAgo()
+    }
+
+    if let reputation = user.reputation {
+      self.reputation = "\(reputation)"
+    }
+
+    if let profileImage = user.profile_image {
+      self.profileImage = profileImage
+    }
+
+    if let link = user.link {
+      self.link = link
+    }
+
+    if let tag = user.collectives?.first?.collective?.tags {
+      self.tags = tag
+    }
   }
 }

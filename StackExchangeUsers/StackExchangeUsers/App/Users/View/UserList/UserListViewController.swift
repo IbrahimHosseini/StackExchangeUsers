@@ -18,6 +18,7 @@ class UserListViewController: UIViewController {
   var cancellable = Set<AnyCancellable>()
 
   var users: [UserTableCellViewModel]?
+  private var viewModel: UserViewModel!
 
   // MARK: - View controller life cycle methods
 
@@ -41,15 +42,29 @@ class UserListViewController: UIViewController {
 
   fileprivate func setupView() {
     title = "Stack Exchange"
-
+    viewModel = UserViewModel()
   }
 
   @objc func loadData() {
-    // Call get user API
+    viewModel.getUsers()
   }
 
   fileprivate func setupBinding() {
+    viewModel.$users
+      .receive(on: RunLoop.main)
+      .sink { [weak self] users in
+        guard let self = self else { return }
+        guard let users = users else { return }
 
+        if users.count > 0 {
+          self.users = users
+          self.tableView.reloadData()
+        } else {
+          print("No item available")
+        }
+
+      }
+      .store(in: &cancellable)
   }
 
 

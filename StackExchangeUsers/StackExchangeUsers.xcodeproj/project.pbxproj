@@ -16,6 +16,16 @@
 		03573DE1280D84020096A9C8 /* UIView+Border.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE0280D84020096A9C8 /* UIView+Border.swift */; };
 		03573DE3280D84200096A9C8 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE2280D84200096A9C8 /* UIView+CornerRadius.swift */; };
 		03573DE5280D84460096A9C8 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE4280D84460096A9C8 /* UIView+Shadow.swift */; };
+		03573DE8280D8EEE0096A9C8 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE7280D8EEE0096A9C8 /* HttpMethods.swift */; };
+		03573DEA280D8F580096A9C8 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DE9280D8F580096A9C8 /* BaseResponse.swift */; };
+		03573DEC280D8F8A0096A9C8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DEB280D8F8A0096A9C8 /* Endpoint.swift */; };
+		03573DEE280D8FF00096A9C8 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 03573DED280D8FF00096A9C8 /* Configuration.plist */; };
+		03573DF0280D908C0096A9C8 /* ConfigurationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DEF280D908C0096A9C8 /* ConfigurationAddress.swift */; };
+		03573DF2280D92140096A9C8 /* User+Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DF1280D92140096A9C8 /* User+Network.swift */; };
+		03573DF5280D939D0096A9C8 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DF4280D939D0096A9C8 /* ServiceProtocol.swift */; };
+		03573DF7280D95C60096A9C8 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DF6280D95C60096A9C8 /* UserViewModel.swift */; };
+		03573DF9280DA43B0096A9C8 /* OpenUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DF8280DA43B0096A9C8 /* OpenUrl.swift */; };
+		03573DFD280DAA9A0096A9C8 /* Int+DateTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03573DFC280DAA9A0096A9C8 /* Int+DateTime.swift */; };
 		036C5865280D54B6002F1B3F /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5864280D54B6002F1B3F /* UserListViewController.swift */; };
 		036C5867280D54D2002F1B3F /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5866280D54D2002F1B3F /* UserDetailsViewController.swift */; };
 		036C586A280D54FC002F1B3F /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C5868280D54FC002F1B3F /* UserTableViewCell.swift */; };
@@ -47,6 +57,16 @@
 		03573DE0280D84020096A9C8 /* UIView+Border.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Border.swift"; sourceTree = "<group>"; };
 		03573DE2280D84200096A9C8 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		03573DE4280D84460096A9C8 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		03573DE7280D8EEE0096A9C8 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		03573DE9280D8F580096A9C8 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		03573DEB280D8F8A0096A9C8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		03573DED280D8FF00096A9C8 /* Configuration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
+		03573DEF280D908C0096A9C8 /* ConfigurationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationAddress.swift; sourceTree = "<group>"; };
+		03573DF1280D92140096A9C8 /* User+Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Network.swift"; sourceTree = "<group>"; };
+		03573DF4280D939D0096A9C8 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
+		03573DF6280D95C60096A9C8 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		03573DF8280DA43B0096A9C8 /* OpenUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenUrl.swift; sourceTree = "<group>"; };
+		03573DFC280DAA9A0096A9C8 /* Int+DateTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+DateTime.swift"; sourceTree = "<group>"; };
 		036C5864280D54B6002F1B3F /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		036C5866280D54D2002F1B3F /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		036C5868280D54FC002F1B3F /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
@@ -101,9 +121,11 @@
 		033C8D0A280D50CF004CECAD /* StackExchangeUsers */ = {
 			isa = PBXGroup;
 			children = (
-				03573DDC280D74FD0096A9C8 /* Manager */,
+				03573DF3280D93820096A9C8 /* Protocols */,
 				036C585E280D5210002F1B3F /* App */,
+				03573DE6280D8ED80096A9C8 /* Enumerations */,
 				036C587F280D64E4002F1B3F /* Extensions */,
+				03573DDC280D74FD0096A9C8 /* Manager */,
 				036C587E280D64DD002F1B3F /* Network */,
 				033C8D1F280D518E004CECAD /* Resource */,
 			);
@@ -126,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				03573DDD280D752D0096A9C8 /* KFImageView.swift */,
+				03573DF8280DA43B0096A9C8 /* OpenUrl.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -138,6 +161,37 @@
 				03573DE4280D84460096A9C8 /* UIView+Shadow.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		03573DE6280D8ED80096A9C8 /* Enumerations */ = {
+			isa = PBXGroup;
+			children = (
+				03573DE7280D8EEE0096A9C8 /* HttpMethods.swift */,
+			);
+			path = Enumerations;
+			sourceTree = "<group>";
+		};
+		03573DF3280D93820096A9C8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				03573DF4280D939D0096A9C8 /* ServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		03573DFA280DA6CC0096A9C8 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		03573DFB280DAA770096A9C8 /* Int */ = {
+			isa = PBXGroup;
+			children = (
+				03573DFC280DAA9A0096A9C8 /* Int+DateTime.swift */,
+			);
+			path = Int;
 			sourceTree = "<group>";
 		};
 		036C585E280D5210002F1B3F /* App */ = {
@@ -185,6 +239,7 @@
 		036C5862280D5482002F1B3F /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				03573DF6280D95C60096A9C8 /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +247,7 @@
 		036C5863280D548A002F1B3F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				03573DF1280D92140096A9C8 /* User+Network.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -219,6 +275,10 @@
 			isa = PBXGroup;
 			children = (
 				036C587C280D601E002F1B3F /* Network.swift */,
+				03573DE9280D8F580096A9C8 /* BaseResponse.swift */,
+				03573DEB280D8F8A0096A9C8 /* Endpoint.swift */,
+				03573DED280D8FF00096A9C8 /* Configuration.plist */,
+				03573DEF280D908C0096A9C8 /* ConfigurationAddress.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -226,6 +286,8 @@
 		036C587F280D64E4002F1B3F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				03573DFB280DAA770096A9C8 /* Int */,
+				03573DFA280DA6CC0096A9C8 /* New Group */,
 				03573DDF280D83EB0096A9C8 /* UIView */,
 				036C5885280D6662002F1B3F /* UIStroyboard */,
 				036C5884280D663F002F1B3F /* UITableView */,
@@ -329,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				036C586B280D54FC002F1B3F /* UserTableViewCell.xib in Resources */,
+				03573DEE280D8FF00096A9C8 /* Configuration.plist in Resources */,
 				033C8D18280D50D2004CECAD /* LaunchScreen.storyboard in Resources */,
 				033C8D15280D50D2004CECAD /* Assets.xcassets in Resources */,
 				033C8D13280D50CF004CECAD /* User.storyboard in Resources */,
@@ -384,27 +447,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03573DE8280D8EEE0096A9C8 /* HttpMethods.swift in Sources */,
 				036C587D280D601E002F1B3F /* Network.swift in Sources */,
 				036C5870280D5538002F1B3F /* UserListViewController+TableView.swift in Sources */,
 				036C5879280D5FC5002F1B3F /* Collective.swift in Sources */,
 				033C8D0C280D50CF004CECAD /* AppDelegate.swift in Sources */,
+				03573DF7280D95C60096A9C8 /* UserViewModel.swift in Sources */,
 				036C5887280D6682002F1B3F /* UIStoryboard.swift in Sources */,
 				036C5877280D5FB1002F1B3F /* ExternalLinks.swift in Sources */,
 				033C8D0E280D50CF004CECAD /* SceneDelegate.swift in Sources */,
 				03573DE5280D84460096A9C8 /* UIView+Shadow.swift in Sources */,
 				036C5883280D6545002F1B3F /* UITableView+DequeueCell.swift in Sources */,
+				03573DEC280D8F8A0096A9C8 /* Endpoint.swift in Sources */,
+				03573DF0280D908C0096A9C8 /* ConfigurationAddress.swift in Sources */,
 				036C586E280D5515002F1B3F /* UserTableViewModel.swift in Sources */,
 				03573DE3280D84200096A9C8 /* UIView+CornerRadius.swift in Sources */,
 				036C5873280D5557002F1B3F /* User.swift in Sources */,
+				03573DF5280D939D0096A9C8 /* ServiceProtocol.swift in Sources */,
 				036C5867280D54D2002F1B3F /* UserDetailsViewController.swift in Sources */,
 				036C587B280D5FE0002F1B3F /* Collectives.swift in Sources */,
 				036C5889280D66DD002F1B3F /* UIStoryboard+Instantiation.swift in Sources */,
+				03573DFD280DAA9A0096A9C8 /* Int+DateTime.swift in Sources */,
 				036C5865280D54B6002F1B3F /* UserListViewController.swift in Sources */,
+				03573DF2280D92140096A9C8 /* User+Network.swift in Sources */,
 				03573DE1280D84020096A9C8 /* UIView+Border.swift in Sources */,
 				036C5875280D5F8B002F1B3F /* BadgeCount.swift in Sources */,
 				03573DDE280D752D0096A9C8 /* KFImageView.swift in Sources */,
 				036C5881280D6535002F1B3F /* UITableView+Register.swift in Sources */,
 				036C586A280D54FC002F1B3F /* UserTableViewCell.swift in Sources */,
+				03573DEA280D8F580096A9C8 /* BaseResponse.swift in Sources */,
+				03573DF9280DA43B0096A9C8 /* OpenUrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
