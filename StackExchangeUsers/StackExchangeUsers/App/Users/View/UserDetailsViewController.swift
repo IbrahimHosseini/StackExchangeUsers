@@ -40,7 +40,7 @@ class UserDetailsViewController: UIViewController {
   // MARK: - Functions
 
   fileprivate func setupView() {
-    tagLabel.numberOfLines = 0
+    tagLabel.numberOfLines = 5
     linkLabel.numberOfLines = 0
 
     linkLabel.isUserInteractionEnabled = true

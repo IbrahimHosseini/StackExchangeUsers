@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xeN-IO-bBn">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -27,7 +27,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xeN-IO-bBn" secondAttribute="trailing" id="1wd-an-Arc"/>
                             <constraint firstItem="xeN-IO-bBn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ehN-56-s1h"/>
                             <constraint firstItem="xeN-IO-bBn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdZ-bL-Gj2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xeN-IO-bBn" secondAttribute="bottom" id="urB-p9-HK7"/>
+                            <constraint firstAttribute="bottom" secondItem="xeN-IO-bBn" secondAttribute="bottom" id="urB-p9-HK7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="X8w-0A-Szf"/>
@@ -48,7 +48,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="Jd5-z7-AKp">
-                                <rect key="frame" x="32" y="76" width="350" height="281"/>
+                                <rect key="frame" x="32" y="60" width="350" height="281"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zdr-a1-w9t">
                                         <rect key="frame" x="112.5" y="0.0" width="125" height="125"/>
@@ -103,7 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="Bbs-xZ-eZX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Jd5-z7-AKp" firstAttribute="top" secondItem="Bbs-xZ-eZX" secondAttribute="top" constant="32" id="MRN-7M-dPd"/>
+                            <constraint firstItem="Jd5-z7-AKp" firstAttribute="top" secondItem="Bbs-xZ-eZX" secondAttribute="top" constant="16" id="MRN-7M-dPd"/>
                             <constraint firstItem="Jd5-z7-AKp" firstAttribute="leading" secondItem="Bbs-xZ-eZX" secondAttribute="leading" constant="32" id="aco-yJ-URh"/>
                             <constraint firstItem="Jd5-z7-AKp" firstAttribute="centerX" secondItem="iPd-qE-IaH" secondAttribute="centerX" id="c33-7e-iU9"/>
                         </constraints>
