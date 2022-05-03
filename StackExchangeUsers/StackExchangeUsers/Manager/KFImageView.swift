@@ -54,7 +54,6 @@ class KFImageView: UIImageView {
     clipsToBounds = true
   }
 
-
   /// Download image from kingfisher lib.
   /// Set the default placeholder for any of images.
   /// Set a transition to image view when image loading.
